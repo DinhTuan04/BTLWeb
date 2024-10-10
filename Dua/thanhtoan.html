@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán</title>
+    <link rel="stylesheet" href="/ass/css/thanhtoan.css">
+    <link rel="stylesheet" href="/ass/css/reset.css" />
+    <link rel="stylesheet" href="/ass/css/style.css" />
+</head>
+<body style="height: 10000px">
+
+    <!-- header -->
+    <header class="header fixed">
+      <div class="main-content">
+        <div class="body">
+          <!-- logo -->
+          <img
+            src="./img/result_logo-search-grid-1x.png"
+            alt="Lesson"
+            class="logo"
+          />
+          <!-- nav -->
+          <nav class="nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Danh mục</a></li>
+              <li><a href="giohang.html">Giỏ hàng</a></li>
+            </ul>
+          </nav>
+          <div class="timkiem">
+            <input type="text" placeholder="Tìm Kiếm...." />
+          </div>
+          <!--btn action  -->
+          <div class="action">
+            <a href="" class="btn btn-dangnhap">Đăng nhập</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <h1>Thông tin thanh toán</h1>
+    <form id="payment-form">
+        <label for="name">Họ và Tên:</label>
+        <input type="text" id="name" required>
+        
+        <label for="address">Địa chỉ:</label>
+        <input type="text" id="address" required>
+
+        <label for="card-number">Số thẻ tín dụng:</label>
+        <input type="text" id="card-number" required>
+
+        <button type="submit">Xác nhận thanh toán</button>
+    </form>
+
+    <script src="thanhtoan.js"></script>
+</body>
+</html>

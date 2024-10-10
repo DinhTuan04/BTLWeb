@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Cửa hàng điện thoại</title>
+    <link rel="stylesheet" href="/ass/css/giohang.css">
+    <link rel="stylesheet" href="/ass/css/reset.css" />
+    <link rel="stylesheet" href="/ass/css/style.css" />
+</head>
+<body style="height: 10000px">
+
+    <!-- header -->
+    <header class="header fixed">
+      <div class="main-content">
+        <div class="body">
+          <!-- logo -->
+          <img
+            src="./img/result_logo-search-grid-1x.png"
+            alt="Lesson"
+            class="logo"
+          />
+          <!-- nav -->
+          <nav class="nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Danh mục</a></li>
+              <li><a href="giohang.html">Giỏ hàng</a></li>
+            </ul>
+          </nav>
+          <div class="timkiem">
+            <input type="text" placeholder="Tìm Kiếm...." />
+          </div>
+          <!--btn action  -->
+          <div class="action">
+            <a href="" class="btn btn-dangnhap">Đăng nhập</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <section class="cart">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hình ảnh</th>
+                        <th>Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Tổng cộng</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Các sản phẩm sẽ được thêm vào đây -->
+                    <tr>
+                        <td><img src="/img/ip14.jpg" alt="iPhone 14" class="product-image"></td>
+                        <td>Điện thoại iPhone 14</td>
+                        <td>30,000,000 VND</td>
+                        <td>
+                            <input type="number" value="1" min="1">
+                        </td>
+                        <td>30,000,000 VND</td>
+                        <td>
+                            <button class="remove-btn">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="/img/ssglx.jpg" alt="Samsung Galaxy S23" class="product-image"></td>
+                        <td>Samsung Galaxy S23</td>
+                        <td>25,000,000 VND</td>
+                        <td>
+                            <input type="number" value="1" min="1">
+                        </td>
+                        <td>25,000,000 VND</td>
+                        <td>
+                            <button class="remove-btn">Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="cart-summary">
+                <p>Tổng số sản phẩm: <span id="total-items">2</span></p>
+                <p>Tổng tiền: <span id="total-price">55,000,000 VND</span></p>
+                <button id="checkout-btn" onclick="checkout()">Thanh toán</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align: center;">&copy; Design by dtuan</p>
+    </footer>
+
+    <script src="giohang.js"></script>
+</body>
+</html>

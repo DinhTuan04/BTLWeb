@@ -1,0 +1,57 @@
+/* Đặt kiểu cho toàn bộ trang */
+body {
+    font-family: Arial, sans-serif; /* Chọn font chữ */
+    background-color: #f4f4f4; /* Màu nền */
+    margin: 0; /* Xóa margin mặc định */
+    padding: 20px; /* Thêm khoảng đệm */
+}
+
+/* Đặt kiểu cho tiêu đề */
+h1 {
+    text-align: center; /* Căn giữa tiêu đề */
+    color: #333; /* Màu chữ */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+}
+
+/* Đặt kiểu cho form */
+#payment-form {
+    background: #fff; /* Nền trắng */
+    border-radius: 8px; /* Bo tròn các góc */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho form */
+    padding: 20px; /* Khoảng đệm cho form */
+    max-width: 400px; /* Chiều rộng tối đa */
+    margin: 0 auto; /* Căn giữa form */
+}
+
+/* Đặt kiểu cho các label */
+label {
+    display: block; /* Hiển thị label như một khối */
+    margin-bottom: 8px; /* Khoảng cách dưới label */
+    font-weight: bold; /* Chữ đậm */
+}
+
+/* Đặt kiểu cho các input */
+input[type="text"] {
+    width: 100%; /* Chiều rộng 100% */
+    padding: 10px; /* Khoảng đệm cho input */
+    border: 1px solid #ccc; /* Viền màu xám */
+    border-radius: 4px; /* Bo tròn viền */
+    margin-bottom: 15px; /* Khoảng cách dưới input */
+}
+
+/* Đặt kiểu cho nút submit */
+button[type="submit"] {
+    background-color: #28a745; /* Màu nền nút */
+    color: white; /* Màu chữ */
+    border: none; /* Không viền */
+    padding: 10px 15px; /* Khoảng đệm cho nút */
+    border-radius: 5px; /* Bo tròn các góc */
+    cursor: pointer; /* Đổi con trỏ khi di chuột */
+    width: 100%; /* Chiều rộng 100% */
+    font-size: 16px; /* Kích thước chữ */
+}
+
+/* Hiệu ứng hover cho nút */
+button[type="submit"]:hover {
+    background-color: #218838; /* Màu nền khi hover */
+}
